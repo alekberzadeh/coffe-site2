@@ -1,0 +1,68 @@
+.about{
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .image{
+            flex: 1 1 42rem;
+            img{
+                width: 100%;
+                animation:aboutImage 4s linear infinite;
+            }
+
+            @keyframes aboutImage {
+                0%, 100%{
+                    transform: scale(.9);
+                    border-radius: $borderradiushover;
+                }
+
+                50%{
+                    transform: scale(.8);
+                    border-radius: $borderradius;
+                }
+            }
+        }
+
+        .content{
+            flex: 1 1 42rem;
+
+            .title{
+                color: $maincolor;
+                font-size: 3rem;
+                line-height: 1.8;
+            }
+            p{
+                color: $maincolor;
+                font-size: 1.5rem;
+                line-height: 1.8;
+                padding: 1rem 0;
+            }
+
+            .icons-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                padding-top: 3rem;
+
+                .icons{
+                    flex: 1 1 15rem;
+                    padding: 1.5rem;
+                    text-align: center;
+                    border: $border;
+                    border-radius: $borderradius;
+
+                    img{
+                        height: 5rem;
+                    }
+                    h3{
+                        font-size: 1.7rem;
+                        padding: 1rem;
+                        color: $maincolor;
+                    }
+                }
+            }
+        }
+    }
+}

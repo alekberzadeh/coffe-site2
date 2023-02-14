@@ -1,0 +1,17 @@
+$maincolor:#443;
+$borderradius: 95% 4% 97% 5%/4% 94% 3% 95%;
+$borderradiushover: 4% 95% 6% 95%/95% 4% 92% 5%;
+$border:.2rem solid $maincolor;
+$borderhover:.2rem dashed $maincolor;
+$white : #fff;
+$ccc : #ccc;
+
+
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+
+    // --------------> @include grid(29rem);
+}

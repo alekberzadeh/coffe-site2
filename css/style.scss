@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+$maincolor:#443;
+$borderradius: 95% 4% 97% 5%/4% 94% 3% 95%;
+$borderradiushover: 4% 95% 6% 95%/95% 4% 92% 5%;
+$border:.2rem solid $maincolor;
+$borderhover:.2rem dashed $maincolor;
+$white : #fff;
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem $maincolor;
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+
+    span{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: $maincolor;
+        font-size: 3rem;
+    }
+}
+
+.btn{
+    display: inline-block;
+    padding:.9rem 1.5rem;
+    border-radius: $borderradius;
+    color: $maincolor;
+    background: none;
+    border: $border;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+
+    &:hover{
+        border-radius: $borderradiushover;
+        border: $borderhover;
+    }
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+
+
+
+
+
+
+
+@import "path/color";
+@import "path/header";
+@import "path/home";
+@import "path/about";
+@import "path/menu";
+@import "path/review";
+@import "path/book";
+@import "path/footer";
+@import "path/responsive";

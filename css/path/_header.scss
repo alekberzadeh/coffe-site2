@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: $white;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    padding: 2rem 9%;
+
+    .logo {
+        color: $maincolor;
+        font-size: 2.3rem;
+        i{
+            padding-left: 0.5rem;
+        }
+    }
+
+    .navbar {
+        a {
+            margin: 0 1rem;
+            color: $maincolor;
+            font-size: 1.7rem;
+        }
+    }
+
+    .btn {
+        margin-top: 0;
+    }
+}
+
+#menu-btn {
+    color: $maincolor;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
